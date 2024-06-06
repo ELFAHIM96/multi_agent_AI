@@ -49,3 +49,27 @@ To run the project, use the following command:
 
 ```sh
 python main.py
+```
+
+# Building a Powerful Multi-Agent Workflow with CrewAI and Groq
+
+## Installation and Importing Libraries
+
+To get started, you need to install the required libraries:
+
+```bash
+!pip install --q crewai==0.28.8 crewai_tools==0.1.6 langchain_community==0.0.29 langchain_groq
+```
+### Defining LLM Model (Llama3–70B)
+
+To define your LLM model (Llama3–70B), use the following code snippet:
+
+```python
+llm = ChatGroq(temperature=0,
+               model_name="llama3-70b-8192",
+               api_key='<YOUR_GROQ_API_KEY>')
+```
+
+
+
+
