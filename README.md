@@ -69,6 +69,63 @@ llm = ChatGroq(temperature=0,
                model_name="llama3-70b-8192",
                api_key='<YOUR_GROQ_API_KEY>')
 ```
+## integrate llama3 with CrewAI
+
+# How to Integrate Llama3 with the CrewAI Project
+
+## Step 1: Environment Variables Configuration
+
+To integrate Ollama, set the following environment variables in a `.env` file:
+
+```plaintext
+OPENAI_API_BASE='http://localhost:11434/v1'
+OPENAI_MODEL_NAME='crewai-llama3-8b'
+OPENAI_API_KEY=''
+```
+
+```plaintext
+FROM llama3:8b
+
+# Set parameters
+
+PARAMETER temperature 0.8
+PARAMETER stop Result
+
+# Sets a custom system message to specify the behavior of the chat assistant
+
+# Leaving it blank for now.
+```
+
+SYSTEM """"""
+Script (setup_model.sh)
+```bash
+
+#!/bin/zsh
+
+# variables
+model_name="llama3:8b"
+
+custom_model_name="crewai-llama3:8b"
+
+# get the base model
+ollama pull $model_name
+
+# create the model file
+ollama create $custom_model_name -f ./ModelFile
+Building a Powerful Multi-Agent Workflow with CrewAI and Groq
+Installation and Importing Libraries
+To get started, you need to install the required libraries:
+```
+```bash
+!pip install --q crewai==0.28.8 crewai_tools==0.1.6 langchain_community==0.0.29 langchain_groq
+```
+Then, import the necessary modules:
+
+```python
+Copier le code
+from crewai import Agent, Task, Crew
+from langchain_groq import ChatGroq
+```
 
 
 
