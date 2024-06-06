@@ -9,7 +9,7 @@ initialize:
 	echo "set up of the branch"
 	git branch -M main
 	echo "set up of the remote repository"
-	git remote add origin https://github.com/ELFAHIM96/multi-agents_crewai.git
+	git remote add origin https://github.com/ELFAHIM96/multi_agent_AI.git
 	git push -u origin main
 push:
 	echo "pushing ..."
