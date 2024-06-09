@@ -69,8 +69,6 @@ llm = ChatGroq(temperature=0,
                model_name="llama3-70b-8192",
                api_key='<YOUR_GROQ_API_KEY>')
 ```
-## integrate llama3 with CrewAI
-
 # How to Integrate Llama3 with the CrewAI Project
 
 ## Step 1: Environment Variables Configuration
@@ -115,16 +113,6 @@ ollama create $custom_model_name -f ./ModelFile
 Building a Powerful Multi-Agent Workflow with CrewAI and Groq
 Installation and Importing Libraries
 To get started, you need to install the required libraries:
-```
-```bash
-!pip install --q crewai==0.28.8 crewai_tools==0.1.6 langchain_community==0.0.29 langchain_groq
-```
-Then, import the necessary modules:
-
-```python
-Copier le code
-from crewai import Agent, Task, Crew
-from langchain_groq import ChatGroq
 ```
 
 
