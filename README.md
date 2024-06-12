@@ -45,12 +45,6 @@ To install and set up the project, follow these steps:
 
 ## Usage
 
-To run the project, use the following command:
-
-```sh
-python main.py
-```
-
 # Building a Powerful Multi-Agent Workflow with CrewAI and Groq
 
 ## Installation and Importing Libraries
