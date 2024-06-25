@@ -102,6 +102,9 @@ custom_model_name="crewai-llama3:8b"
 # get the base model
 ollama pull $model_name
 
+
+
+
 # create the model file
 ollama create $custom_model_name -f ./ModelFile
 Building a Powerful Multi-Agent Workflow with CrewAI and Groq
